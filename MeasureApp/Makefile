@@ -224,6 +224,7 @@ Makefile: MeasureApp.pro ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/win32
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/qt_config.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/win32-g++/qmake.conf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/exclusive_builds.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/toolchain.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/default_pre.prf \
@@ -231,7 +232,6 @@ Makefile: MeasureApp.pro ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/win32
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/resolve_config.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/exclusive_builds_post.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/default_post.prf \
-		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/win32/console.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/resources_functions.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/qtquickcompiler.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/precompile_header.prf \
@@ -239,15 +239,20 @@ Makefile: MeasureApp.pro ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/win32
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/qt.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/resources.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/moc.prf \
+		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/win32/opengl.prf \
+		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/uic.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/qmake_use.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/file_copies.prf \
+		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/win32/windows.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/testcase_targets.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/exceptions.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/yacc.prf \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/lex.prf \
 		MeasureApp.pro \
+		../../../Programming/Qt/5.14.2/mingw73_32/lib/Qt5Widgets.prl \
+		../../../Programming/Qt/5.14.2/mingw73_32/lib/Qt5Gui.prl \
 		../../../Programming/Qt/5.14.2/mingw73_32/lib/Qt5Core.prl \
-		.qmake.stash \
+		../../../Programming/Qt/5.14.2/mingw73_32/lib/qtmain.prl \
 		../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile MeasureApp.pro -spec win32-g++ "CONFIG+=qtquickcompiler"
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/spec_pre.prf:
@@ -404,6 +409,7 @@ Makefile: MeasureApp.pro ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/win32
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/qt_config.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/win32-g++/qmake.conf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/exclusive_builds.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/toolchain.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/default_pre.prf:
@@ -411,7 +417,6 @@ Makefile: MeasureApp.pro ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/win32
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/resolve_config.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/exclusive_builds_post.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/default_post.prf:
-../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/win32/console.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/resources_functions.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/qtquickcompiler.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/precompile_header.prf:
@@ -419,15 +424,20 @@ Makefile: MeasureApp.pro ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/win32
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/qt.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/resources.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/moc.prf:
+../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/win32/opengl.prf:
+../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/uic.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/qmake_use.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/file_copies.prf:
+../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/win32/windows.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/testcase_targets.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/exceptions.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/yacc.prf:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/lex.prf:
 MeasureApp.pro:
+../../../Programming/Qt/5.14.2/mingw73_32/lib/Qt5Widgets.prl:
+../../../Programming/Qt/5.14.2/mingw73_32/lib/Qt5Gui.prl:
 ../../../Programming/Qt/5.14.2/mingw73_32/lib/Qt5Core.prl:
-.qmake.stash:
+../../../Programming/Qt/5.14.2/mingw73_32/lib/qtmain.prl:
 ../../../Programming/Qt/5.14.2/mingw73_32/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile MeasureApp.pro -spec win32-g++ "CONFIG+=qtquickcompiler"
