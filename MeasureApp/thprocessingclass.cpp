@@ -17,7 +17,10 @@ void THProcessingClass::AddData(float &Temperature, float &Humidity)
     QString Message = "Received value: " + QString::number(Temperature) + " C°, "
             + QString::number(Humidity) + " φ, " + row.Date.toString();
 
-    qDebug()<< Message;
+    ProtocolToConsole Unit;
+    Unit.MainMessage = Message;
+
+    emit SendDataToConsole(Unit);
 }
 
 THProcessingClass::~THProcessingClass()

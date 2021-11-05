@@ -23,10 +23,13 @@ public:
 
 private:
     ConsoleClass console;
-    THProcessingClass ProcessObj;
+    THProcessingClass * ProcessObj = new THProcessingClass();
 
 private slots:
-    void timetText();
+
+signals:
+
+
 
 };
 

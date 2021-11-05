@@ -19,9 +19,11 @@ private:
     float GetTemperature();
     float GetHumidity();
 
+private slots:
 
 signals:
     void ValueSignal(float temperature, float humidity);
+    void SingDef();
 
 
 };

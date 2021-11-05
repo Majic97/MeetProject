@@ -3,6 +3,7 @@
 #include "ui_ConsoleWindow.h"
 #include "QDebug"
 #include "iostream"
+#include "thprocessingclass.h"
 
 using namespace std;
 
@@ -24,6 +25,9 @@ private:
 
 
 signals:
+
+public slots:
+    void GetDataWithSignal(ProtocolToConsole Message);
 
 };
 

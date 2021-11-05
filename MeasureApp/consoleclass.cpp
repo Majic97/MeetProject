@@ -11,3 +11,8 @@ ConsoleClass::~ConsoleClass()
 
     qDebug()<< "Console class destoyed";
 }
+
+void ConsoleClass::GetDataWithSignal(ProtocolToConsole Message)
+{
+    ui->textBrowser->append(Message.MainMessage);
+}

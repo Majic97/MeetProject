@@ -11,6 +11,11 @@ struct THDrow {
     QDateTime Date;
 };
 
+struct ProtocolToConsole{
+    QString  MainMessage;
+};
+
+
 class THProcessingClass : public QObject
 {
     Q_OBJECT
@@ -20,7 +25,7 @@ public:
     ~THProcessingClass();
 
 signals:
-    void SendDataToConsole(QString &Message);
+    void SendDataToConsole(ProtocolToConsole Message);
 
 private:
     QVector<THDrow> DataContainer;

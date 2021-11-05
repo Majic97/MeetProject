@@ -5,10 +5,11 @@ TempHumGenerator::TempHumGenerator(QObject *parent) : QObject(parent)
     timer = new QTimer();
 
 
-    connect(timer,&QTimer::timeout,[this](){
-//        emit this->ValueSignal(GetTemperature(),GetHumidity());
-        qDebug()<<"111";
-    });
+    connect(timer,&QTimer::timeout,this,[this](){
+        float temp = GetTemperature();
+        float hum = GetHumidity();
+        emit ValueSignal(temp,hum);
+    },Qt::QueuedConnection);
 
 
 }
@@ -26,7 +27,7 @@ void TempHumGenerator::start()
 
 void TempHumGenerator::stop()
 {
-//    timer->stop();
+    timer->stop();
 }
 
 float TempHumGenerator::GetTemperature()
